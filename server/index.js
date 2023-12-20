@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const BookModel = require("./models/bookModel");
 const booksRoute = require("./routes/bookesRoute");
 const cors = require("cors");
-const PORT = 5000;
+const { PORT, mongoDBURL } = require("./config");
 
 const app = express();
 app.use(cors());
@@ -16,9 +16,7 @@ app.use(express.json());
 //   })
 // );
 async function main() {
-  await mongoose.connect(
-    "mongodb+srv://GaneshJ10:Ganeshvijay10@book-store-mern.0pdhon2.mongodb.net/books-collection?retryWrites=true&w=majority"
-  );
+  await mongoose.connect(mongoDBURL);
 
   app.get("/", async (req, res) => {
     res.send("hello everyOne");
