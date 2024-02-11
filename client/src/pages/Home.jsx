@@ -29,20 +29,23 @@ const Home = () => {
 
   return (
     <div className="p-4 bg-gray-100 shadow-lg">
-      <div className="flex justify-center items-center gap-x-4">
-        <button
-          className=" text-white bg-purple-700 hover:bg-pink-500 px-4 py-2 rounded-lg transition duration-300 transform hover:scale-110 focus:outline-none focus:ring focus:border-blue-300"
-          onClick={() => setShowType("table")}
-        >
-          Table
-        </button>
-        <button
-          className=" text-white bg-purple-700 hover:bg-pink-500 px-4 py-2 rounded-lg transition duration-300 transform hover:scale-110 focus:outline-none focus:ring focus:border-blue-300"
-          onClick={() => setShowType("card")}
-        >
-          Card
-        </button>
-      </div>
+    
+   <div className="flex justify-center items-center gap-x-10">
+  <button
+    className="text-sm md:text-base text-white bg-purple-700 hover:bg-pink-500 px-2 md:px-3 py-1 md:py-2 rounded-lg transition duration-300 transform hover:scale-110 focus:outline-none focus:ring focus:border-blue-300 w-24 md:w-auto"
+    onClick={() => setShowType("table")}
+  >
+    Table
+  </button>
+  <button
+    className="text-sm md:text-base text-white bg-purple-700 hover:bg-pink-500 px-2 md:px-3 py-1 md:py-2 rounded-lg transition duration-300 transform hover:scale-110 focus:outline-none focus:ring focus:border-blue-300 w-24 md:w-auto"
+    onClick={() => setShowType("card")}
+  >
+    Card
+  </button>
+</div>
+
+
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-4xl font-bold text-purple-700 animate__animated animate__fadeIn animate__delay-1s hover:scale-110 transition-transform duration-300 hover:text-pink-500">
           Books List

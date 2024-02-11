@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login{
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  .login:hover{
+    height: 50px;
+    width: 100%;
+    background-color:rgb(255, 0, 255) !important;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  .logdiv{
+    /* background-color: red; */
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(255, 40, 112),rgb(212, 32, 92));
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 520px;
+    margin-top: 170px;
+    border-radius: 15px;
+  }
+
+
+  .insidecontain {
+    
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: 2px solid #007bff; Change border color and thickness */
+    background-image: linear-gradient(to bottom right, rgb(229, 4, 120), rgb(251, 0, 255),rgb(123, 0, 150));
+    border-radius: 10px; /* Adjust border-radius to match the card shape */
+    height: 400px;
+    width: 500px;
+    padding: 20px; /* Add padding for spacing */
+  }
+  .det{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(252, 240, 244);
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+  }
+
+  .signupbtn{
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    background: crimson;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+ .signupbtn:hover{
+  background-color: rgb(230, 1, 153);
+ }
+ .logibtn{
+  height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    background: crimson ;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+ }
+  
+ .logibtn:hover{
+  background-color: rgb(86, 2, 86) !important;
+ }
+  /* button:hover {
+    background-color: #0056b3;
+  }
+     */
+  
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 2px solid red ;
+    border: 1px solid blue; 
+    border-radius: 4px;
+    color: #000; /* Change text color to black */
+    background-color: #f4f4f4; /* Add a light gray background */
+  }
+  .title{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+
+  }
+  input:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: pink; /* Change border color on focus */
+    box-shadow: 0 0 0 2px palevioletred; /* Add a subtle focus shadow */
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }

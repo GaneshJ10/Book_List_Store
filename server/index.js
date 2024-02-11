@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const BookModel = require("./models/bookModel");
 const booksRoute = require("./routes/bookesRoute");
+const loginroute = require("./routes/Login");
+
 const cors = require("cors");
 const { PORT, mongoDBURL } = require("./config");
 
@@ -17,11 +19,14 @@ app.use(express.json());
 // );
 async function main() {
   await mongoose.connect(mongoDBURL);
-
+  
+ 
   app.get("/", async (req, res) => {
     res.send("hello everyOne");
   });
   app.use("/books", booksRoute);
+  app.use("/login",loginroute);
+
   app.listen(PORT, () => {
     console.log("server is running properly");
   });
